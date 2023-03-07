@@ -1,0 +1,55 @@
+<% if user_signed_in?   %>
+
+
+
+<p style="color: green"><% notice %></p>
+
+<h1>Friends List Main</h1>
+
+<table class="table" id="friends">
+  <thead class="table-dark">
+    <tr>
+
+      <th ><strong>Name:</strong></th>
+      <th scope="col"><strong>Email:</strong></th>
+      <th scope="col"><strong>Phone:</strong></th>
+      <th scope="col"><strong>Twitter:</strong></th>
+      
+       <th colspan="2">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody> 
+
+    <% @friends.each do |friend| %>
+    <%= render friend %>
+    
+    
+    
+    <p>
+      <% link_to "Show this friend",  friend , class:"btn btn-info"  %>
+    </p>
+  <% end %>
+    
+    </tr>
+  </tbody>
+</table>
+
+
+<%= link_to "Add friend", new_friend_path , class:"btn btn-warning"  %>
+<br />
+<br />
+
+<% else %>
+
+<%= render "home/faq" %>
+
+<% end %>
+
+ 
+
+
+
+
+
+

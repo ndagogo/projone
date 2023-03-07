@@ -1,0 +1,36 @@
+<table class="table" id="friends">
+  <thead class="table-dark">
+    <tr>
+
+      <th ><strong>Name:</strong></th>
+      <th scope="col"><strong>Email:</strong></th>
+      <th scope="col"><strong>Phone:</strong></th>
+      <th scope="col"><strong>Twitter:</strong></th>
+      
+       <th colspan="2">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+<%= render @friend %>
+
+
+  <div class="card-body">
+<p style="color: green"><% notice %></p>
+
+
+ </div>
+</div>
+
+<div>
+  <%= link_to "Edit Friend", edit_friend_path(@friend) %> |
+  <%= link_to "Back To Friends", friends_path %>
+  <%= button_to "Delete Friend", @friend, method: :delete, class:"btn btn-danger btn-sm"  %>
+ 
+</div>
+
+
+
+
+
