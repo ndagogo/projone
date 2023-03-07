@@ -2,7 +2,7 @@
 
 ## SUBHEADER FOR YOU
 
-IS SECTION WAS MODIFIED BY ME , NDAGOGO
+THIS SECTION WAS MODIFIED BY ZEALLY , OMEGAONE
 
 # Below is still README 
 This README would normally document whatever steps are necessary to get the
